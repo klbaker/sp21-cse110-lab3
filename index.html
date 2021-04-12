@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon"
+              type="image/png"
+              href="images/favicon-32x32.png">
+        <title>Journal</title>
+    </head>
+    <body>
+        <header>
+            <details>
+                <summary>Journal Entries</summary>
+                This is a journal containing information about the last 3 days.
+            </details>
+            <nav>
+                <ul>
+                    <li><a href="#april9">Friday, 4/9/21</a></li>
+                    <li><a href="#april10">Saturday, 4/10/21</a></li>
+                    <li><a href="#april11">Sunday, 4/11/21</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Journal Entries</h1>
+            <h2>The Past 3 Days</h2>
+            <section>
+                <h3 id="april9">Friday, 4/9/21</h3>
+                <p>Today, I met with my professor and my research group for <b>ERSP</b>.
+                    We disused the progress we have been making in our project and our
+                    ability to move past a bus error. Additionally, I attended recruitment
+                    for my <b>pre-law fraternity</b>.
+                </p>
+            </section>
+            <hr />
+            <section>
+                <h3 id="april10">Saturday, 4/10/21</h3>
+                <ol>
+                    <li>Watch recorded lectures from this week.</li>
+                    <li>Attend interviews for my fraternity</li>
+                    <li><em>Attend Group 7 Intro Meeting</em></li>
+                    <li><strong>Get first dose of COVID Vaccine</strong></li>
+                    <li>Go to Costco</li>
+                </ol>
+            </section>
+            <hr />
+            <section>
+                <h3 id="april11">Sunday, 4/11/21</h3>
+                I have a <i>busy</i> day:
+                <span>CSE 110 Lab,</span>
+                <span>CSE 130 HW,</span>
+                <span>Lecture Quizzes</span>
+
+                <div>I need to remember: don't get distracted</div>
+
+                <p>I miss the days when I was able to study in Geisel library
+                    and hear ambient study noises. I also miss in the summer
+                    when I had the time to go on walks and flip.
+                    Now I study in my room at school looking at and hearing
+                    construction.
+                </p>
+                <audio controls>
+                    <source src="AV/people-in-lounge-1.mp3" type="audio/mpeg">
+                </audio><br>
+
+                <img src="images/Geisel.jpeg" alt="Geisel" width="500"><br>
+
+                <video width="600" controls>
+                    <source src="AV/handsprings.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section>
+                <h3>Add your own journal entry:</h3>
+                <form>
+                    <fieldset>
+                        <label for="name">name:</label>
+                        <input type="text" id="name" name="name"><br>
+                    </fieldset>
+
+                    <label for="day-choice">Day of the week:</label>
+                    <input list="day" id="day-choice" name="day-choice" />
+
+                    <datalist id="day">
+                        <option value="Sunday">
+                        <option value="Monday">
+                        <option value="Tuesday">
+                        <option value="Wednesday">
+                        <option value="Thursday">
+                        <option value="Friday">
+                        <option value="Saturday">
+                    </datalist><br>
+                    
+                    <label for="entry-date">Date:</label>
+                    <input type="date" id="entry-date" name="entry-date"><br>
+
+                    <label for="entry">Describe the day in one word:</label>
+                    <input type="text" id="entry" name="entry"><br>
+
+                    <input type="checkbox" id="mood1" name="mood1" value="Happy">
+                    <label for="mood1"> I was happy.</label><br>
+                    <input type="checkbox" id="mood2" name="mood2" value="Sad">
+                    <label for="mood2"> I was sad.</label><br>
+                    <input type="checkbox" id="mood3" name="mood3" value="Tired">
+                    <label for="mood3"> I was tired.</label><br>
+
+                    <textarea rows="4" cols="50" name="comment" form="usrform">Write about your day here...</textarea><br>
+
+                    <input type="radio" id="public" name="privacy" value="public">
+                    <label for="public">Public</label><br>
+                    <input type="radio" id="private" name="privacy" value="private">
+                    <label for="private">Private</label><br>
+
+                    <label for="media">What media will you include:</label>
+                    <select name="media" id="media">
+                        <option value="picture">Picture</option>
+                        <option value="video">Video</option>
+                        <option value="audio">Audio</option>
+                    </select><br>
+
+                    <button type="button">Publish!</button>
+                </form>
+            </section>
+        </main>
+        <hr />
+        <footer>
+            <div>A journal by Katherine Baker</div>
+
+            <p>Before you leave, here is a haiku:<br>
+                How are you today?<br>
+                Are you good or are you bad?<br>
+                I hope you are great.
+            </p>
+        </footer>
+    </body>
+</html>
