@@ -1,0 +1,113 @@
+@media (max-width:500px) {
+    body{
+        background-color:rgb(0, 210, 210);
+    }
+}
+
+@font-face {
+    font-family: 'Karantina';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/karantina/v1/buE0po24ccnh31GVMAB59wo60tZCYg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+html {
+    font-family: "Karantina", serif;
+}
+
+* {                                             /* universal selector */
+    color:blue;
+}
+
+h1 {
+    color:darkcyan;                           /* color name */
+    background-color:rgb(0,0,0);              /* rgb color */
+    font-size:35pt;                             /* absolute unit*/
+    margin:auto;                                /* auto margin */
+    text-align:center                           /* text styling */
+}
+
+h2 {
+    color:#1EB90B;                            /* hex code color */
+    font-size:3em;                              /* absolute unit */
+}
+
+section.intro {
+    background-color:coral;
+}
+
+div[target="blank"] {
+    color:rgb(100,100,100);
+}
+
+div {                                            /* box method */
+    margin-top:2cm;                             /* long margin */
+    margin: 25px;                               /* short margin */
+    padding-bottom:1cm;
+    padding: 2cm 1cm 2cm;
+    border-style:dotted;                        /* visible box around text and padding */
+    border-color: gold;
+    border-width:5mm;
+    border-radius:15px 50px 15px;
+    max-width:400px;                            /* max-width so box can't grow larger */
+    min-width:200px;                            /* min-width so box can't shrink too much */
+}
+
+span {
+    display: inline-block;
+    border-style:solid;
+    border-color:black;
+    border-width:2em;
+    text-decoration-style: underline double;    /* text styling */
+    height:2cm;
+    width:1in;
+}
+
+p {
+    display:inline;
+}
+
+button:hover {
+    color:hsl(100, 88%, 20%);                  /* hsl color */
+}
+
+button:active {
+    color:green;
+}
+
+.flex-container {
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    background-color:rgb(175,75,75);
+}
+  
+.flex-container > div {
+    background-color:pink;
+    width:100px;
+    margin:5px;
+    text-align:center;
+    line-height:70px;
+    font-size:25px;
+}
+
+ul, ol {
+    background-color:aqua;
+}
+
+datalist option {
+    background-color:blueviolet;
+}
+
+select > option {
+    color:blue;
+}
+
+div~p{
+    text-decoration-style:underline;
+}
+
+input+label {
+    font-size:20pt;
+}
