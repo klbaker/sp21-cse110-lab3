@@ -1,1 +1,1 @@
-[part 1: journal](https://klbaker.github.io/Lab2/)
+[Lab 3 Page](https://klbaker.github.io/sp21-cse110-lab3/)
