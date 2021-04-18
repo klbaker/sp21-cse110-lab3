@@ -2,17 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: right; }
+
+            .gridcontainer{
+                display:grid;
+                grid-template-areas:
+                'header header header header header header'
+                'menu menu menu right right right'
+                'menu menu menu right right right';
+                grid-gap: 10px;
+                background-color:pink;
+                padding: 10px;
+            }
+
+            body{
+                background-color:blanchedalmond
+            }
+        </style>
         <link rel="icon"
               type="image/png"
               href="images/favicon-32x32.png">
         <title>Journal</title>
     </head>
+
     <body>
         <header>
             <details>
-                <summary>Journal Entries</summary>
+                <summary style="color:green">Journal Entries</summary>
                 This is a journal containing information about the last 3 days.
             </details>
+
+            <div class="flex-container">
+                <div>April 10</div>
+                <div>April 11</div>
+                <div>April 12</div>
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="#april9">Friday, 4/9/21</a></li>
@@ -24,8 +53,8 @@
         <main>
             <h1>Journal Entries</h1>
             <h2>The Past 3 Days</h2>
-            <section>
-                <h3 id="april9">Friday, 4/9/21</h3>
+            <section class="intro">
+                <h3 font-size:15vw id="april9">Friday, 4/9/21</h3>
                 <p>Today, I met with my professor and my research group for <b>ERSP</b>.
                     We disused the progress we have been making in our project and our
                     ability to move past a bus error. Additionally, I attended recruitment
@@ -51,7 +80,11 @@
                 <span>CSE 130 HW,</span>
                 <span>Lecture Quizzes</span>
 
-                <div>I need to remember: don't get distracted</div>
+                <div class="grid-container">
+                    <div class="item1">I need to remember: don't get distracted</div>
+                    <div class="item2">I get distracted by my phone</div>
+                    <div class="item3">I get distracted by TV</div>
+                </div>
 
                 <p>I miss the days when I was able to study in Geisel library
                     and hear ambient study noises. I also miss in the summer
@@ -59,13 +92,13 @@
                     Now I study in my room at school looking at and hearing
                     construction.
                 </p>
-                <audio controls>
+                <audio controls position:absolute>
                     <source src="AV/people-in-lounge-1.mp3" type="audio/mpeg">
                 </audio><br>
 
-                <img src="images/Geisel.jpeg" alt="Geisel" width="500"><br>
+                <img height=30% src="images/Geisel.jpeg" alt="Geisel" width="500"><br>
 
-                <video width="600" controls>
+                <video width=25% controls position:fixed>
                     <source src="AV/handsprings.mp4" type="video/mp4">
                 </video>
             </section>
@@ -123,7 +156,7 @@
         </main>
         <hr />
         <footer>
-            <div>A journal by Katherine Baker</div>
+            <div target="blank">A journal by Katherine Baker</div>
 
             <p>Before you leave, here is a haiku:<br>
                 How are you today?<br>
@@ -132,4 +165,5 @@
             </p>
         </footer>
     </body>
+
 </html>
